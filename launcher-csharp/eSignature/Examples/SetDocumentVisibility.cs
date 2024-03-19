@@ -84,6 +84,8 @@ namespace ESignature.Examples
                 Documents = PrepareDocumentsForTemplate(docPdf, docDocx, docHtml),
             };
 
+            envelopeDefinition.EnforceSignerVisibility = "true";
+
             Signer signer1 = PrepareSigner(
                 signer1Email,
                 signer1Name,
